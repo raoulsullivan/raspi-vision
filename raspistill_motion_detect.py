@@ -18,6 +18,7 @@ forceCaptureTime = 60 * 60 # Once an hour
 saveWidth = 1280
 saveHeight = 960
 diskSpaceToReserve = 40 * 1024 * 1024 # Keep 40 mb free on disk
+print diskSpaceToReserve
 
 # Capture a small test image (for motion detection)
 def captureTestImage():
@@ -56,6 +57,7 @@ def getFreeSpace():
 
 # Get first image
 image1, buffer1 = captureTestImage()
+print('Captured test image.')
 
 # Reset last capture time
 lastCapture = time.time()
