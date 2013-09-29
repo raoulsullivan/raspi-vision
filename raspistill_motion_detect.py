@@ -62,7 +62,7 @@ print('Captured test image.')
 # Reset last capture time
 lastCapture = time.time()
 
-int i = 0
+i = 0
 
 while (True):
   i++
