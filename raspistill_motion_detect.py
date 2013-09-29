@@ -62,7 +62,11 @@ print('Captured test image.')
 # Reset last capture time
 lastCapture = time.time()
 
+int i = 0
+
 while (True):
+  i++
+  print i
 
   # Get comparison image
   image2, buffer2 = captureTestImage()
