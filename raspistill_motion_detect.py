@@ -46,7 +46,7 @@ def keepDiskSpaceFree(bytesToReserve):
         os.remove(filename) 
         print "Deleted %s to avoid filling disk" % filename 
         if (getFreeSpace() > bytesToReserve):
-  return
+        return
 
 # Get available disk space
 def getFreeSpace():
