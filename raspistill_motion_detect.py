@@ -22,7 +22,7 @@ print diskSpaceToReserve
 
 # Capture a small test image (for motion detection)
 def captureTestImage():
-  command = "raspistill -w %s -h %s -t 0 -e bmp -o -" % (100, 75)
+  command = "raspistill -w %s -h %s -t 0 -e bmp -o output.bmp" % (100, 75)
   imageData = StringIO.StringIO()
   imageData.write(subprocess.check_output(command, shell=True))
   imageData.seek(0)
